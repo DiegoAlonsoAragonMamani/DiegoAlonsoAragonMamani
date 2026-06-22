@@ -1,99 +1,412 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="google-site-verification" content="FB8U7_XEbLjDwy0ILjC7DvGS1AtapL2oA6vSQg8_QGM" />
+<title>Diego Alonso Aragón Mamani | Página Personal</title>
 
-    <title>Diego Alonso Aragón Mamani | Página Personal</title>
+<meta name="description" content="Página personal de Diego Alonso Aragón Mamani, estudiante de Ciencia de la Computación en la Universidad Católica San Pablo.">
 
-    <meta name="description" content="Página personal de Diego Alonso Aragón Mamani. Información, estudios, proyectos e intereses.">
+<style>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f8;
-            margin: 0;
-            padding: 0;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-        .contenedor {
-            max-width: 900px;
-            margin: 50px auto;
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
+body{
+    background:#f4f6f8;
+    color:#333;
+}
 
-        h1 {
-            color: #2563eb;
-            text-align: center;
-        }
+nav{
+    background:#2563eb;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
 
-        h2 {
-            color: #333;
-            border-bottom: 2px solid #2563eb;
-            padding-bottom: 5px;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+    transition:0.3s;
+}
 
-        p, li {
-            color: #444;
-            line-height: 1.7;
-        }
+nav a:hover{
+    color:#dbeafe;
+}
 
-        ul {
-            padding-left: 20px;
-        }
+.hero{
+    background:linear-gradient(135deg,#2563eb,#60a5fa);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
 
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            color: #666;
-        }
-    </style>
+.hero h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:white;
+    color:#2563eb;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+}
+
+.contenedor{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+section{
+    margin-bottom:50px;
+}
+
+h2{
+    color:#2563eb;
+    margin-bottom:15px;
+    border-bottom:3px solid #2563eb;
+    padding-bottom:8px;
+}
+
+p{
+    line-height:1.8;
+}
+
+ul{
+    padding-left:20px;
+    line-height:1.8;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    width:350px;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.companeros{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.companero{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.companero a{
+    text-decoration:none;
+    color:#2563eb;
+    font-weight:bold;
+}
+
+.companero:hover{
+    transform:scale(1.03);
+}
+
+.footer{
+    background:#1e293b;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+</style>
 </head>
+
 <body>
 
-    <div class="contenedor">
+<nav>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#universidad">Universidad</a>
+    <a href="#cursos">Cursos</a>
+    <a href="#profesores">Profesores</a>
+    <a href="#companeros">Compañeros</a>
+    <a href="#contacto">Contacto</a>
+</nav>
 
-        <h1>Diego Alonso Aragón Mamani</h1>
+<header class="hero">
 
-        <p>
-            Bienvenido a mi página personal. Aquí comparto información sobre mis estudios,
-            proyectos y áreas de interés relacionadas con la programación y la tecnología.
-        </p>
+    <h1>Diego Alonso Aragón Mamani</h1>
 
-        <h2>Sobre mí</h2>
+    <p>
+        Estudiante de Ciencia de la Computación
+        - Universidad Católica San Pablo
+    </p>
 
-        <p>
-            Soy Diego Alonso Aragón Mamani. Me interesa el desarrollo de software,
-            la programación en C++ y Python, los algoritmos, las bases de datos
-            y el aprendizaje de nuevas tecnologías.
-        </p>
+    <a class="btn"
+       href="https://www.linkedin.com/in/diego-aragon-mamani-573a69418"
+       target="_blank">
+       Mi LinkedIn
+    </a>
 
-        <h2>Intereses</h2>
+</header>
 
-        <ul>
-            <li>Programación en C++</li>
-            <li>Programación en Python</li>
-            <li>Desarrollo Web</li>
-            <li>Bases de Datos</li>
-            <li>Algoritmos y Estructuras de Datos</li>
-        </ul>
+<div class="contenedor">
 
-        <h2>Proyectos</h2>
+<section id="sobre-mi">
 
-        <p>
-            Esta sección se irá actualizando con proyectos académicos y personales.
-        </p>
+<h2>Sobre mí</h2>
 
-        <div class="footer">
-            © 2026 Diego Alonso Aragón Mamani
-        </div>
+<p>
+Soy Diego Alonso Aragón Mamani, estudiante de la carrera de Ciencia de la Computación
+en la Universidad Católica San Pablo. Me apasiona la tecnología, la programación,
+la inteligencia artificial y el desarrollo de software.
 
-    </div>
+Mi objetivo es fortalecer constantemente mis conocimientos en computación para
+contribuir al desarrollo de soluciones innovadoras que generen impacto positivo
+en la sociedad.
+</p>
+
+<br>
+
+<h3>Habilidades</h3>
+
+<ul>
+<li>Programación en C++</li>
+<li>Programación en Python</li>
+<li>Desarrollo Web</li>
+<li>Bases de Datos</li>
+<li>Algoritmos y Estructuras de Datos</li>
+<li>Trabajo en equipo</li>
+<li>Resolución de problemas</li>
+</ul>
+
+</section>
+
+<section id="universidad">
+
+<h2>Universidad</h2>
+
+<p>
+La Universidad Católica San Pablo es una comunidad universitaria en la que nos
+esforzamos por buscar la verdad y formar integralmente a nuestros estudiantes.
+Cuenta con carreras profesionales de pregrado de alto nivel académico y programas
+de posgrado como maestrías, diplomados y cursos especializados en áreas de gran
+demanda laboral.
+</p>
+
+<br>
+
+<a class="btn"
+href="https://pe.linkedin.com/school/universidad-catolica-san-pablo/"
+target="_blank">
+LinkedIn UCSP
+</a>
+
+</section>
+
+<section id="cursos">
+
+<h2>Cursos de la Carrera</h2>
+
+<ul>
+<li>Programación</li>
+<li>Estructuras Discretas</li>
+<li>Matemática</li>
+<li>Fundamentos de Computación</li>
+<li>Desarrollo Web</li>
+<li>Base de Datos</li>
+<li>Algoritmos y Estructuras de Datos</li>
+<li>Arquitectura de Computadores</li>
+</ul>
+
+</section>
+
+<section id="profesores">
+
+<h2>Profesores</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4JMUCtBLdiLSxLg4iR5WoDToq0q_HEPcTBmANdP55MhKGpPhGkcnQBoPC&s=10"
+alt="Ernesto Cuadros">
+
+<h3>Dr. Ernesto Cuadros</h3>
+
+<p>
+Doctor en Ciencia de la Computación y referente académico
+en el desarrollo de esta disciplina en el Perú.
+</p>
+
+<br>
+
+<a class="btn"
+href="https://pe.linkedin.com/in/ecuadrosv"
+target="_blank">
+LinkedIn
+</a>
+
+</div>
+
+<div class="card">
+
+<img src="https://boretd.github.io/githubpage/img/miskelly.jpg"
+alt="Kelly Vizconde">
+
+<h3>Mg. Kelly Vizconde La Motta</h3>
+
+<p>
+Magíster en Ciencia de la Computación. Actualmente cursa una
+segunda maestría en Ciencia de Datos y estudios doctorales
+con énfasis en Inteligencia Artificial. Es directora de
+Kids & Code y docente universitaria especializada en
+Computación, Inteligencia Artificial y Ciencia de Datos.
+</p>
+
+<br>
+
+<a class="btn"
+href="https://www.linkedin.com/in/kelly-vizconde-la-motta-3a57a4143/"
+target="_blank">
+LinkedIn
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="companeros">
+
+<h2>Páginas Web de Mis Compañeros</h2>
+
+<div class="companeros">
+
+<div class="companero">
+<a href="https://arjunleyva.github.io/" target="_blank">
+Arjun Leiva
+</a>
+</div>
+
+<div class="companero">
+<a href="https://renatorioscalvera.github.io/David-Renato-Jesus-Rios-Calvera.github.io/" target="_blank">
+Renato Ríos
+</a>
+</div>
+
+<div class="companero">
+<a href="https://fernandofrisancho.github.io/Fernando-Frisancho/" target="_blank">
+Fernando Frisancho
+</a>
+</div>
+
+<div class="companero">
+<a href="https://cessar13.github.io/CesarChampion.github.io/" target="_blank">
+César Champion
+</a>
+</div>
+
+<div class="companero">
+<a href="https://angelfabianramosmunoz.github.io/" target="_blank">
+Ángel Ramos
+</a>
+</div>
+
+<div class="companero">
+<a href="https://ackyul.github.io/yoshuanunez.github.io/" target="_blank">
+Joshua Núñez
+</a>
+</div>
+
+<div class="companero">
+<a href="https://radicallix-radix-radix.github.io/felipeleitemiranda/" target="_blank">
+Felipe Leite
+</a>
+</div>
+
+<div class="companero">
+<a href="https://gabriel-coaquira.github.io/" target="_blank">
+Gabriel Coaquira
+</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="contacto">
+
+<h2>Contacto</h2>
+
+<p>
+Puedes encontrarme y contactarme a través de mi perfil profesional de LinkedIn.
+</p>
+
+<br>
+
+<a class="btn"
+href="https://www.linkedin.com/in/diego-aragon-mamani-573a69418"
+target="_blank">
+Ir a mi LinkedIn
+</a>
+
+</section>
+
+</div>
+
+<footer class="footer">
+    © 2026 Diego Alonso Aragón Mamani | Ciencia de la Computación - UCSP
+</footer>
 
 </body>
 </html>
+```
