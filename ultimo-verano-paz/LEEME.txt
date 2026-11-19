@@ -1,0 +1,10 @@
+ESTRUCTURA
+  index.html        -> estructura (HTML): las 34 diapositivas
+  css/estilos.css   -> estilos (CSS)
+  js/config.js      -> AQUÍ SE PONE EL VIDEO (línea VIDEO_URL)
+  js/datos.js       -> zonas de los botones y datos (no hace falta tocar)
+  js/app.js         -> lógica (JavaScript)
+  imagenes/         -> las diapositivas (slide-01.webp ... slide-34.webp)
+  video/            -> guarda aquí tu video .mp4
+
+Abre index.html con doble clic. Mantén las carpetas juntas.
