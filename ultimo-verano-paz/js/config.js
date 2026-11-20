@@ -15,4 +15,4 @@
 
    Si la dejas vacía ('') se muestra un aviso dentro del recuadro rojo.
    ===================================================================== */
-const VIDEO_URL = 'https://drive.google.com/drive/folders/1OHNA6ZjRix-L3I5EUIXVhEdL80YlviRk?usp=sharing';
+const VIDEO_URL = 'https://drive.google.com/file/d/1jAn0J6aKOkJU6v4odHgO88Ul_iLD4bjK/view?usp=sharing';
