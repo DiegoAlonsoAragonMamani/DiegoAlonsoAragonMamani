@@ -15,4 +15,4 @@
 
    Si la dejas vacía ('') se muestra un aviso dentro del recuadro rojo.
    ===================================================================== */
-const VIDEO_URL = 'VIDEO PODCAST LA PGM';
+const VIDEO_URL = 'video/VIDEO PODCAST LA PGM';
