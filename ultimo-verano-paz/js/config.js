@@ -15,4 +15,4 @@
 
    Si la dejas vacía ('') se muestra un aviso dentro del recuadro rojo.
    ===================================================================== */
-const VIDEO_URL = 'video/VIDEO PODCAST LA PGM';
+const VIDEO_URL = 'https://drive.google.com/drive/folders/1OHNA6ZjRix-L3I5EUIXVhEdL80YlviRk?usp=sharing';
